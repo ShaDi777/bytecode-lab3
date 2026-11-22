@@ -1,0 +1,149 @@
+{
+  "jar": "src\\main\\resources\\sample.jar",
+  "classCount": 8,
+  "interfaceCount": 2,
+  "project": {
+    "maxInheritanceDepth": 1,
+    "avgInheritanceDepth": 0.625,
+    "avgOverriddenMethods": 0.75,
+    "avgFieldsPerClass": 0.875,
+    "abc": {
+      "assignments": 6,
+      "branches": 35,
+      "conditions": 7,
+      "value": 36.19
+    }
+  },
+  "classes": [
+    {
+      "name": "AKt",
+      "kind": "class",
+      "inheritanceDepth": 0,
+      "fields": 0,
+      "overriddenMethods": 0,
+      "abc": {
+        "assignments": 6,
+        "branches": 20,
+        "conditions": 7,
+        "value": 22.02
+      }
+    },
+    {
+      "name": "Abstract",
+      "kind": "interface",
+      "inheritanceDepth": null,
+      "fields": 0,
+      "overriddenMethods": null,
+      "abc": {
+        "assignments": 0,
+        "branches": 0,
+        "conditions": 0,
+        "value": 0
+      }
+    },
+    {
+      "name": "P1",
+      "kind": "class",
+      "inheritanceDepth": 1,
+      "fields": 1,
+      "overriddenMethods": 1,
+      "abc": {
+        "assignments": 0,
+        "branches": 3,
+        "conditions": 0,
+        "value": 3
+      }
+    },
+    {
+      "name": "P2",
+      "kind": "class",
+      "inheritanceDepth": 1,
+      "fields": 1,
+      "overriddenMethods": 1,
+      "abc": {
+        "assignments": 0,
+        "branches": 3,
+        "conditions": 0,
+        "value": 3
+      }
+    },
+    {
+      "name": "P3",
+      "kind": "class",
+      "inheritanceDepth": 1,
+      "fields": 1,
+      "overriddenMethods": 1,
+      "abc": {
+        "assignments": 0,
+        "branches": 3,
+        "conditions": 0,
+        "value": 3
+      }
+    },
+    {
+      "name": "P4",
+      "kind": "class",
+      "inheritanceDepth": 1,
+      "fields": 1,
+      "overriddenMethods": 1,
+      "abc": {
+        "assignments": 0,
+        "branches": 3,
+        "conditions": 0,
+        "value": 3
+      }
+    },
+    {
+      "name": "Point",
+      "kind": "class",
+      "inheritanceDepth": 1,
+      "fields": 1,
+      "overriddenMethods": 1,
+      "abc": {
+        "assignments": 0,
+        "branches": 1,
+        "conditions": 0,
+        "value": 1
+      }
+    },
+    {
+      "name": "X",
+      "kind": "class",
+      "inheritanceDepth": 0,
+      "fields": 1,
+      "overriddenMethods": 0,
+      "abc": {
+        "assignments": 0,
+        "branches": 1,
+        "conditions": 0,
+        "value": 1
+      }
+    },
+    {
+      "name": "Y",
+      "kind": "interface",
+      "inheritanceDepth": null,
+      "fields": 0,
+      "overriddenMethods": null,
+      "abc": {
+        "assignments": 0,
+        "branches": 0,
+        "conditions": 0,
+        "value": 0
+      }
+    },
+    {
+      "name": "YImpl",
+      "kind": "class",
+      "inheritanceDepth": 0,
+      "fields": 1,
+      "overriddenMethods": 1,
+      "abc": {
+        "assignments": 0,
+        "branches": 1,
+        "conditions": 0,
+        "value": 1
+      }
+    }
+  ]
+}
