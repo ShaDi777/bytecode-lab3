@@ -1,5 +1,6 @@
 plugins {
     id("java")
+    id("application")
 }
 
 group = "org.example"
@@ -11,15 +12,26 @@ repositories {
 
 dependencies {
     implementation("org.ow2.asm:asm:9.5")
-    implementation("org.ow2.asm:asm-tree:9.5")
-    implementation("org.ow2.asm:asm-analysis:9.5")
-    implementation("org.ow2.asm:asm-util:9.5")
 
     testImplementation(platform("org.junit:junit-bom:5.10.0"))
     testImplementation("org.junit.jupiter:junit-jupiter")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 }
 
+application {
+    mainClass.set("org.example.analyzer.Main")
+}
+
 tasks.test {
     useJUnitPlatform()
+}
+
+tasks.register<Jar>("fatJar") {
+    archiveBaseName.set("analyzer")
+    archiveClassifier.set("all")
+    manifest { attributes("Main-Class" to "org.example.analyzer.Main") }
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    from(sourceSets.main.get().output)
+    from(configurations.runtimeClasspath.get().map { if (it.isDirectory) it else zipTree(it) })
+    exclude("META-INF/*.SF", "META-INF/*.DSA", "META-INF/*.RSA")
 }
